@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What House Are You?</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Mystery+Quest&family=Patrick+Hand&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Mystery+Quest&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Mystery+Quest&family=Patrick+Hand&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <div id="fullscreenBackground">
+    </div>
+    <div id="gryffindorBackground" class="hiddenStep">
+    </div>
+    <div id="hufflepuffBackground" class="hiddenStep">
+    </div>
+    <div id="ravenclawBackground" class="hiddenStep">
+    </div>
+    <div id="slytherinBackground" class="hiddenStep">
+    </div>
+    <header>
+        <nav>
+            <div></div>
+            <img src="images/Harry-Potter-Logo.png" alt="Harry Potter Logo">
+            <button id="portfolioBtn" class="portfolio-btn">Welcome!</button>
+        </nav>
+    </header>
+    <main class="main-content">
+        <div class="content-wrapper">
+            <div id="defaultText" class="text-wrapper">
+                <div class="quiz"> Quiz </div>
+                <h1>Discover your Hogwarts House</h1>
+                <h2>Don the Sorting Hat to be placed into your rightful Hogwarts house. The Sorting Hat's decision is
+                    final.
+                </h2>
+            </div>
+            <div id="gryffindorText" class="text-wrapper hiddenStep">
+                <div class="quiz"> You Have Been Placed In... </div>
+                <h1>Gryffindor</h1>
+                <h2>Those in this house are well known for their bravery and courage. Gryffindors never back down from a
+                    fight or doing what they believe is right.
+                </h2>
+            </div>
+            <div id="hufflepuffText" class="text-wrapper hiddenStep">
+                <div class="quiz"> You Have Been Placed In... </div>
+                <h1>Hufflepuff</h1>
+                <h2>Hufflepuff characteristics include a strong sense of justice, loyalty, patience, and a propensity
+                    for hard work. Hufflepuffs are also seen as nice, almost to a fault.
+                </h2>
+            </div>
+            <div id="ravenclawText" class="text-wrapper hiddenStep">
+                <div class="quiz"> You Have Been Placed In... </div>
+                <h1>Ravenclaw</h1>
+                <h2>Ravenclaw House prized learning, wisdom, wit, and intellect in its members. Thus, many Ravenclaws
+                    tended to be academically motivated and talented students.
+                </h2>
+            </div>
+            <div id="slytherinText" class="text-wrapper hiddenStep">
+                <div class="quiz"> You Have Been Placed In... </div>
+                <h1>Slytherin</h1>
+                <h2>Slytherins tended to be ambitious, shrewd, cunning, strong leaders, and achievement-oriented. They
+                    also had highly developed senses of self-preservation.
+                </h2>
+            </div>
+            <div class="quiz-option-wrapper hiddenStep" id="gryffindorLogo">
+                <img src="/images/gryffindor logo.jpg" alt="Gryffindor Logo">
+            </div>
+            <div class="quiz-option-wrapper hiddenStep" id="hufflepuffLogo">
+                <img src="/images/hufflepuff logo.jpg" alt="Hufflepuff Logo">
+            </div>
+            <div class="quiz-option-wrapper hiddenStep" id="ravenclawLogo">
+                <img src="/images/ravenclaw logo.jpg" alt="Ravenclaw Logo">
+            </div>
+            <div class="quiz-option-wrapper hiddenStep" id="slytherinLogo">
+                <img src="/images/slytherin logo.jpg" alt="Slytherin Logo">
+            </div>
+            <div class="quiz-option-wrapper" id="startQuiz">
+                <img src="/images/sorting-hat.png" alt="Sorting Hat">
+                <button id="startQuizOption" type="button" class="quiz-option">Start The Quiz</button>
+            </div>
+            <div class="quiz-option-wrapper hiddenStep" id="questionOne">
+                <h3>What is your favorite color?</h3>
+                <button type="button" class="quiz-option questionOneOption gryffindorCount">Red</button>
+                <button type="button" class="quiz-option questionOneOption hufflepuffCount">Yellow</button>
+                <button type="button" class="quiz-option questionOneOption ravenclawCount">Blue</button>
+                <button type="button" class="quiz-option questionOneOption slytherinCount">Green</button>
+            </div>
+            <div class="quiz-option-wrapper hiddenStep" id="questionTwo">
+                <h3>What pet would you bring to Hogwarts?</h3>
+                <button type="button" class="quiz-option questionTwoOption gryffindorCount">Cat</button>
+                <button type="button" class="quiz-option questionTwoOption hufflepuffCount">Mouse</button>
+                <button type="button" class="quiz-option questionTwoOption ravenclawCount">Owl</button>
+                <button type="button" class="quiz-option questionTwoOption slytherinCount">Toad</button>
+            </div>
+            <div class="quiz-option-wrapper hiddenStep" id="questionThree">
+                <h3>Which of these traits is most important to you?</h3>
+                <button type="button" class="quiz-option questionThreeOption gryffindorCount">Bravery</button>
+                <button type="button" class="quiz-option questionThreeOption hufflepuffCount">Hard work</button>
+                <button type="button" class="quiz-option questionThreeOption ravenclawCount">Intellect</button>
+                <button type="button" class="quiz-option questionThreeOption slytherinCount">Winning</button>
+            </div>
+            <div class="quiz-option-wrapper hiddenStep" id="questionFour">
+                <h3>Which of these subjects do you like best?</h3>
+                <button type="button" class="quiz-option questionFourOption gryffindorCount">Arithmany and
+                    Astronomy</button>
+                <button type="button" class="quiz-option questionFourOption hufflepuffCount">Divination and
+                    Charms</button>
+                <button type="button" class="quiz-option questionFourOption ravenclawCount">History of Magic and Ancient
+                    Runes</button>
+                <button type="button" class="quiz-option questionFourOption slytherinCount">Potions and Defense against
+                    the Dark
+                    arts</button>
+            </div>
+            <div class="quiz-option-wrapper hiddenStep" id="questionFive">
+                <h3>Your best friend thinks you are:</h3>
+                <button type="button" class="quiz-option questionFiveOption gryffindorCount">Fair and resolute</button>
+                <button type="button" class="quiz-option questionFiveOption hufflepuffCount">Faithful and
+                    honest</button>
+                <button type="button" class="quiz-option questionFiveOption ravenclawCount">Sensible and smart</button>
+                <button type="button" class="quiz-option questionFiveOption slytherinCount">Ambitious and
+                    shrewd</button>
+            </div>
+            <div class="quiz-option-wrapper hiddenStep" id="questionSix">
+                <h3>Which of these adjectives best describes you? </h3>
+                <button type="button" class="quiz-option questionSixOption gryffindorCount">Confident and bold</button>
+                <button type="button" class="quiz-option questionSixOption hufflepuffCount">Shy and gentle</button>
+                <button type="button" class="quiz-option questionSixOption ravenclawCount">Insightful and
+                    dexterous</button>
+                <button type="button" class="quiz-option questionSixOption slytherinCount">Visionary and
+                    agressive</button>
+            </div>
+            <div class="quiz-option-wrapper hiddenStep" id="questionSeven">
+                <h3>What is the most important to you when you have to make a decision? </h3>
+                <button type="button" class="quiz-option questionSevenOption gryffindorCount">Confident and
+                    bold</button>
+                <button type="button" class="quiz-option questionSevenOption hufflepuffCount">Shy and gentle</button>
+                <button type="button" class="quiz-option questionSevenOption ravenclawCount">Insightful and
+                    dexterous</button>
+                <button type="button" class="quiz-option questionSevenOption slytherinCount">Visionary and
+                    agressive</button>
+            </div>
+            <div class="quiz-option-wrapper hiddenStep" id="questionEight">
+                <h3>The core of your wand is made of: </h3>
+                <button type="button" class="quiz-option questionEightOption gryffindorCount">Fire</button>
+                <button type="button" class="quiz-option questionEightOption hufflepuffCount">Rock</button>
+                <button type="button" class="quiz-option questionEightOption ravenclawCount">Air</button>
+                <button type="button" class="quiz-option questionEightOption slytherinCount">Water</button>
+            </div>
+            <div class="quiz-option-wrapper hiddenStep" id="questionNine">
+                <h3>Your favorite teacher would be</h3>
+                <button type="button" class="quiz-option questionNineOption gryffindorCount">Fair and firm</button>
+                <button type="button" class="quiz-option questionNineOption hufflepuffCount">Genuine and kind</button>
+                <button type="button" class="quiz-option questionNineOption ravenclawCount">Knowledgeable and
+                    witty</button>
+                <button type="button" class="quiz-option questionNineOption slytherinCount">Expert and strict</button>
+            </div>
+            <div class="quiz-option-wrapper hiddenStep" id="questionTen">
+                <h3>In the Muggle world, you would like to be</h3>
+                <button type="button" class="quiz-option questionTenOption gryffindorCount">A pilot</button>
+                <button type="button" class="quiz-option questionTenOption hufflepuffCount">A doctor</button>
+                <button type="button" class="quiz-option questionTenOption ravenclawCount">A teacher</button>
+                <button type="button" class="quiz-option questionTenOption slytherinCount">A lawyer</button>
+            </div>
+        </div>
+    </main>
+
+
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>
